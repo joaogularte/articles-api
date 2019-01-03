@@ -1,4 +1,4 @@
-import app from './app';
+const app = require('./src/app');
 
 
 app.listen(7000, ()=>{
