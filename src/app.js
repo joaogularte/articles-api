@@ -1,5 +1,11 @@
-import express from 'express';
+/* Dependencias */
+const express = require('express');
+
+/* Routes */
+const articleRoutes = require('./routes/article');
 
 const app = express();
 
-export default app; 
+app.use('/articles', articleRoutes);
+
+module.exports = app; 
